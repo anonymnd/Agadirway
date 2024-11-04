@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center fade-in" style="background-image: url(images/about.jpg);">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="col-md-6 wrap-about py-md-5 ftco-animate">
+                <div class="heading-section mb-5 pl-md-5">
+                    <span class="subheading"></span>
+                    <h2 class="mb-4 animate__animated animate__fadeInLeft">Bienvenue sur Agadir Bus !</h2>
+                    <p class="animate__animated animate__fadeInLeft">Agadir Bus est votre application pour des trajets en bus plus simples et rapides à travers la ville. Que vous soyez étudiant, navetteur quotidien, ou voyageur occasionnel, Agadir Bus vous offre des horaires en temps réel, des itinéraires optimisés, et des informations pratiques pour faciliter vos déplacements. Notre mission : rendre le transport public à Agadir plus accessible et fiable pour tous.</p>
+                    <p>
+                        <a href="#" class="btn btn-primary animate__animated animate__fadeInUp">Search Vehicle</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add the following CSS -->
+<style>
+    /* Fade-in effect for the image */
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.5s forwards; /* Fade in over 1.5 seconds */
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Overlay to darken the image */
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+        z-index: 1;
+    }
+
+    /* Animate.css classes for additional animations */
+    .animate__animated {
+        visibility: hidden; /* Hide elements initially */
+    }
+
+    .animate__fadeInLeft {
+        animation-name: fadeInLeft;
+    }
+
+    .animate__fadeInUp {
+        animation-name: fadeInUp;
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            transform: translateX(-30px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Delay animation to show when elements are visible */
+    .ftco-animate {
+        visibility: visible; /* Make the elements visible for animations */
+    }
+</style>
+
+<!-- Include Animate.css in your project for additional animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
